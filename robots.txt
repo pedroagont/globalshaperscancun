@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://globalshaperscancun.org/sitemap.xml
