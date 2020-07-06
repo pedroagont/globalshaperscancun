@@ -6316,7 +6316,8 @@ body .booked-modal .booked-form{
 /* Breadcrumbs block backgrounds */
 .breadcrumbs_block_bg1{	background-image: url(http://placehold.it/1920x348); }
 .breadcrumbs_block_bg2{	background-image: url(http://placehold.it/1920x348); }
-.breadcrumbs_block_bg3{ background-image: url(http://placehold.it/1920x348); }
+/* .breadcrumbs_block_bg3{ background-image: url(http://placehold.it/1920x348); } */
+.breadcrumbs_block_bg3{ background-image: url(https://images.unsplash.com/photo-1548964643-0765c5d29abe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1135&q=80); }
 .breadcrumbs_block_bg4{ background-image: url(http://placehold.it/1920x348); }
 .breadcrumbs_block_bg5{ background-image: url(http://placehold.it/1920x348); }
 .breadcrumbs_block_bg6{ background-image: url(http://placehold.it/1920x348); }
