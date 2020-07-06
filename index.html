@@ -1,97 +1,824 @@
 <!DOCTYPE html>
- <html>
- <head>
- <meta charset="UTF-8">
- <title>Global Shapers Cancun</title>
- </head>
- <style>
- body, html {
-   height: 100%;
-   margin: 0;
- }
+<html lang="es" class="scheme_original">
 
-  .bgimg {
-   background-image: url('https://images.unsplash.com/photo-1557244252-04610dfe5790?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80');
-   height: 100%;
-   background-position: center;
-   background-size: cover;
-   position: relative;
-   color: white;
-   font-family: "Courier New", Courier, monospace;
-   font-size: 25px;
- }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="format-detection" content="telephone=no">
 
-  .topleft {
-   position: absolute;
-   top: 0;
-   left: 16px;
- }
+        <!-- ========== SEO ========== -->
+        <title>Global Shapers Cancún Hub</title>
+        <meta content="Iniciativa por el Foro Económico Mundial para articular y dotar de herramientas y oportunidades a jóvenes líderes y agentes de cambio de Cancún." name="description">
+        <meta content="global shapers, cancun, jóvenes, juventud, futuro, comunidad, sustentabilidad, justicia, paz" name="keywords">
+        <meta content="Neon Wave" name="author">
+        <meta name="robots" content="index, follow, all"/>
 
-  .bottomleft {
-   position: absolute;
-   bottom: 0;
-   left: 16px;
- }
+        <link rel="canonical" href="https://globalshaperscancun.org">
 
-  .middle {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   text-align: center;
- }
+        <meta property="og:title" content="Global Shapers Cancún Hub" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://globalshaperscancun.org" />
+        <meta property="og:image" content="https://globalshaperscancun.org/images/footer.jpg" />
+        <meta property="og:description" content="Iniciativa de jóvenes por la transformación de Cancún hacia un futuro próspero." />
 
-  hr {
-   margin: auto;
-   width: 40%;
- }
- </style>
- <body>
+        <!-- Favicon
+      	============================================= -->
+        <link rel="shortcut icon" href="images/favicon/favicon.png">
+        <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
 
-  <div class="bgimg">
-   <div class="topleft">
-     <p>globalshaperscancun.org</p>
-   </div>
-   <div class="middle">
-     <h1>ESPÉRANOS PRONTO</h1>
-     <hr>
-     <p id="demo" style="font-size:30px"></p>
-   </div>
-   <div class="bottomleft">
-     <p>Página en construcción</p>
-   </div>
- </div>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat:400,700|Lato:300,300i,400,400i,700,700i|Raleway:300,300i,400,400i,700,700i&amp;subset=latin-ext">
+        <link rel="stylesheet" href="css/fontello/css/fontello.css" type="text/css" media="all" />
 
-  <script>
- // Set the date we're counting down to
- var countDownDate = new Date("Jul 2, 2020 15:00:00").getTime();
+        <link rel="stylesheet" href="js/vendor/revslider/css/settings.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/plugin.revslider.min.css" type="text/css" media="all" />
 
-  // Update the count down every 1 second
- var countdownfunction = setInterval(function() {
+        <link rel="stylesheet" href="css/style.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/core.animation.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/shortcodes.min.css" type="text/css" media="all" />
 
-    // Get todays date and time
-   var now = new Date().getTime();
+        <link rel="stylesheet" href="css/plugin.instagram-widget.min.css" type="text/css" media="all" />
 
-    // Find the distance between now an the count down date
-   var distance = countDownDate - now;
+        <link rel="stylesheet" href="js/vendor/essential-grid/css/settings.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="js/vendor/essential-grid/css/lightbox.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/tpl-essential-grids.min.css" type="text/css" media="all" />
 
-    // Time calculations for days, hours, minutes and seconds
-   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        <link rel="stylesheet" href="css/skin.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/responsive.min.css" type="text/css" media="all" />
 
-    // Output the result in an element with id="demo"
-   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-   + minutes + "m " + seconds + "s ";
+        <link rel="stylesheet" href="css/core.messages.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="js/vendor/magnific/magnific-popup.min.css" type="text/css" media="all" />
+    </head>
 
-    // If the count down is over, write some text
-   if (distance < 0) {
-     clearInterval(countdownfunction);
-     document.getElementById("demo").innerHTML = "EXPIRED";
-   }
- }, 1000);
- </script>
+    <body class="page body_style_wide body_filled article_style_stretch scheme_original top_panel_show top_panel_over sidebar_hide">
+        <a id="toc_home" class="sc_anchor" title="Home" data-description="<i>Return to Home</i> - <br>navigate to home page of the site" data-icon="icon-home" data-url="/" data-separator="yes"></a>
+        <a id="toc_top" class="sc_anchor" title="To Top" data-description="<i>Back to top</i> - <br>scroll to top of the page" data-icon="icon-double-up" data-url="" data-separator="yes"></a>
+        <!-- Body wrap -->
+        <div class="body_wrap">
+            <!-- Page wrap -->
+            <div class="page_wrap">
+                <div class="top_panel_fixed_wrap"></div>
+                <!-- Header -->
+                <header class="top_panel_wrap top_panel_style_5 scheme_original">
+                    <div class="top_panel_wrap_inner top_panel_inner_style_5 top_panel_position_over">
+                        <!-- Menu area -->
+                        <div class="top_panel_middle">
+                            <div class="content_wrap">
+                                <!-- Contact logo -->
+                                <div class="contact_logo">
+                                    <div class="logo">
+                                        <a href="/">
+                                            <img src="images/logo-white.png" class="logo_main" alt="">
+                                            <img src="images/logo.png" class="logo_fixed" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- /Contact logo -->
+                                <!-- Main Menu -->
+                                <div class="menu_main_wrap">
+                                    <nav class="menu_main_nav_area">
+                                        <ul id="menu_main" class="menu_main_nav">
+                                            <!-- Inicio -->
+                                            <li class="menu-item">
+                                                <a href="#inicio">Inicio</a>
+                                            </li>
+                                            <!-- /Inicio -->
+                                            <!-- Nosotros -->
+                                            <li class="menu-item">
+                                                <a href="#nosotros">Nosotros</a>
+                                            </li>
+                                            <!-- /Nosotros -->
+                                            <!-- Iniciativas -->
+                                            <li class="menu-item">
+                                                <a href="#iniciativas">Iniciativas</a>
+                                            </li>
+                                            <!-- /Iniciativas -->
+                                            <!-- Shapers -->
+                                            <li class="menu-item">
+                                                <a href="#shapers">Shapers</a>
+                                            </li>
+                                            <!-- /Shapers -->
+                                            <!-- Contacto -->
+                                            <li class="menu-item">
+                                                <a href="#contacto">Contacto</a>
+                                            </li>
+                                            <!-- /Contacto -->
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!-- /Main Menu -->
+                            </div>
+                        </div>
+                        <!-- /Menu area -->
+                    </div>
+                </header>
+                <!-- /Header -->
+                <!-- Header Mobile -->
+                <div class="header_mobile">
+                    <div class="content_wrap">
+                        <div class="menu_button icon-menu"></div>
+                        <div class="logo">
+                            <a href="/">
+                                <img src="images/logo.png" class="logo_main" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="side_wrap">
+                        <div class="close">Close</div>
+                        <div class="panel_top">
+                            <nav class="menu_main_nav_area">
+                                <ul id="menu_main_mobile" class="menu_main_nav">
+                                  <!-- Inicio -->
+                                  <li class="menu-item">
+                                      <a href="#inicio">Inicio</a>
+                                  </li>
+                                  <!-- /Inicio -->
+                                  <!-- Nosotros -->
+                                  <li class="menu-item">
+                                      <a href="#nosotros">Nosotros</a>
+                                  </li>
+                                  <!-- /Nosotros -->
+                                  <!-- Iniciativas -->
+                                  <li class="menu-item">
+                                      <a href="#iniciativas">Iniciativas</a>
+                                  </li>
+                                  <!-- /Iniciativas -->
+                                  <!-- Shapers -->
+                                  <li class="menu-item">
+                                      <a href="#shapers">Shapers</a>
+                                  </li>
+                                  <!-- /Shapers -->
+                                  <!-- Contacto -->
+                                  <li class="menu-item">
+                                      <a href="#contacto">Contacto</a>
+                                  </li>
+                                  <!-- /Contacto -->
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <!-- /Header Mobile -->
+                <!-- Revolution Slider section -->
+                <section class="slider_wrap slider_fullscreen slider_engine_revo slider_alias_newlife-church-home-2" id="inicio">
+                    <div id="rev_slider_3_1_wrapper" class="rev_slider_wrapper fullscreen-container">
+                        <!-- START REVOLUTION SLIDER 5.2.6 fullscreen mode -->
+                        <div id="rev_slider_3_1" class="rev_slider fullscreenbanner" data-version="5.2.6">
+                            <ul>
+                                <!-- SLIDE  -->
+                                <li data-index="rs-8" data-transition="zoomin" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="images/header.jpg" alt="" title="home2_sl1" width="1920" height="1003" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+                                    <!-- LAYERS -->
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-resizeme" id="slide-8-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['919','723','862','862']" data-width="231" data-height="32" data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="6000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                        <div id="toc">
+                                            <span class="toc_item">
+                                                <span id="slider-bottom-arrow">
+                                                   <a href="#to_bottom"><i class="icon-down"></i></a>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <a id="to_bottom"></a>
+                                    </div>
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption tp-resizeme slide_title_line-1" id="slide-8-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['534','224','266','184']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="2800" data-splitin="none" data-splitout="none" data-responsive_offset="on">GLOBAL SHAPERS CANCÚN </div>
+                                    <!-- LAYER NR. 3 -->
+                                    <div class="tp-caption tp-resizeme slide_title_line-2" id="slide-8-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['572','260','299','212']" data-width="['572','572','572','441']" data-height="['21','21','21','23']" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="3400" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="text-transform: uppercase">Transformación de comunidades hacia un futuro próspero. </div>
+                                    <!-- LAYER NR. 4 -->
+                                    <div class="tp-caption tp-resizeme slide_img" id="slide-8-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['404','102','102','404']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1300;e:Power3.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="1370" data-responsive_offset="on">
+                                        <img src="images/rectangle-top.png" alt="" width="401" height="143" data-ww="['401px','401px','401px','401px']" data-hh="['143px','143px','143px','143px']" data-no-retina>
+                                    </div>
+                                    <!-- LAYER NR. 5 -->
+                                    <div class="tp-caption tp-resizeme slide_img" id="slide-8-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['728','395','395','395']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="1370" data-responsive_offset="on">
+                                        <img src="images/rectangle-bottom.png" alt="" width="401" height="143" data-ww="['401px','401px','401px','401px']" data-hh="['143px','143px','143px','143px']" data-no-retina> </div>
+                                    <!-- LAYER NR. 6 -->
+                                    <div class="tp-caption tp-resizeme slide_title_line-3" id="slide-8-layer-7" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['593','287','352','267']" data-fontsize="['60','51','60','44']" data-lineheight="['70','70','70','50']" data-width="['none','none','580','433']" data-height="['none','none','142','none']" data-whitespace="['nowrap','nowrap','normal','normal']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:730;e:Power4.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="4000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05">El poder de la juventud en acción</div>
+                                </li>
+                            </ul>
+                            <div class="tp-bannertimer"></div>
+                        </div>
+                    </div>
+                    <!-- END REVOLUTION SLIDER -->
+                </section>
+                <!-- /Revolution Slider section -->
+                <!-- Next event section -->
+                <div class="hp1_next_event_section tpl_add_bg">
+                    <div class="content_wrap">
+                        <div class="columns_wrap sc_columns columns_nofluid sc_columns_count_3 margin_bottom_null">
+                            <div class="column-1_3 sc_column_item sc_column_item_1 odd first">
+                                <div class="sc_section margin_left_6_4286">
+                                    <div class="sc_section_inner">
+                                        <h3 class="sc_title sc_title_regular hp1_event_title_1 tpl_light">Convocatoria abierta:</h3>
+                                        <h6 class="sc_title sc_title_regular tpl_light font_weight_400">Forma parte de una de las iniciativas de jóvenes más importantes del mundo de la mano del Foro Económico Mundial.</h6>
+                                    </div>
+                                </div>
+                            </div><div class="column-1_3 sc_column_item sc_column_item_2 even">
+                                <div id="sc_countdown_1" class="sc_countdown sc_countdown_style_1 aligncenter margin_top_null" data-date="2020-07-31" data-time="23:59:59">
+                                    <div class="sc_countdown_inner">
+                                        <div class="sc_countdown_item sc_countdown_days">
+                                            <span class="sc_countdown_digits">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </span>
+                                            <span class="sc_countdown_label">Days</span>
+                                        </div>
+                                        <div class="sc_countdown_separator">:</div>
+                                        <div class="sc_countdown_item sc_countdown_hours">
+                                            <span class="sc_countdown_digits">
+                                                <span></span>
+                                                <span></span>
+                                            </span>
+                                            <span class="sc_countdown_label">Hours</span>
+                                        </div>
+                                        <div class="sc_countdown_separator">:</div>
+                                        <div class="sc_countdown_item sc_countdown_minutes">
+                                            <span class="sc_countdown_digits">
+                                                <span></span>
+                                                <span></span>
+                                            </span>
+                                            <span class="sc_countdown_label">Minutes</span>
+                                        </div>
+                                        <div class="sc_countdown_separator">:</div>
+                                        <div class="sc_countdown_item sc_countdown_seconds">
+                                            <span class="sc_countdown_digits">
+                                                <span></span>
+                                                <span></span>
+                                            </span>
+                                            <span class="sc_countdown_label">Seconds</span>
+                                        </div>
+                                        <div class="sc_countdown_placeholder hide"></div>
+                                    </div>
+                                </div>
+                            </div><div class="column-1_3 sc_column_item sc_column_item_3 odd">
+                                <div class="sc_section aligncenter margin_top_null">
+                                    <div class="sc_section_inner">
+                                        <a href="/convocatoria-2020.html" class="sc_button sc_button_square sc_button_style_border sc_button_color_style_4 sc_button_size_large">VER CONVOCATORIA</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <!-- /Next event section -->
+                <!-- Page Content Wrap -->
+                <div class="page_content_wrap page_paddings_no" id="nosotros">
+                    <div class="content">
+                        <article class="post_item post_item_single page">
+                            <section class="post_content">
+                              <!-- Welcome section -->
+                              <div class="hp1_welcome_section">
+                                  <div class="content_wrap">
+                                      <div class="columns_wrap">
+                                        <div class="column-1_2 sc_column_item sc_column_item_1 odd first">
+                                          <figure class="sc_image sc_image_shape_square">
+                                            <img src="images/about.jpg" alt="" />
+                                          </figure>
+                                        </div><div class="column-1_2 sc_column_item sc_column_item_2 even">
+                                          <!-- Services section -->
+                                      <div class="sc_services_wrap">
+                                          <div class="sc_services sc_services_style_services-5 sc_services_type_icons sc_slider_nopagination sc_slider_nocontrols width_100_per" data-interval="5040" data-slides-min-width="250">
+                                              <h6 class="sc_services_subtitle sc_item_subtitle">Nosotros</h6>
+                                              <h2 class="sc_services_title sc_item_title">¿Quiénes Somos?</h2>
+                                              <div class="sc_services_descr sc_item_descr">Global Shapers es una iniciativa del World Economic Forum que surge como un esfuerzo por articular y dotar de herramientas y oportunidades a los jóvenes líderes y agentes de cambio de diferentes regiones en el mundo.</div>
+                                              <!-- Services item --><div class="sc_services_item sc_services_item_1 odd first">
+                                                  <span class="sc_icon icon-house306"></span>
+                                                  <div class="sc_services_item_content">
+                                                      <h4 class="sc_services_item_title">
+                                                          <a href="service-single.html">Misión</a>
+                                                      </h4>
+                                                      <div class="sc_services_item_description">
+                                                          <p>Generar una transformación en nuestras comunidades hacia un futuro próspero.</p>
+                                                      </div>
+                                                  </div>
+                                              </div><!-- /Services item --><!-- Services item --><div class="sc_services_item sc_services_item_2 even">
+                                                  <span class="sc_icon icon-open-book6"></span>
+                                                  <div class="sc_services_item_content">
+                                                      <h4 class="sc_services_item_title">
+                                                          <a href="service-single.html">Visión</a></h4>
+                                                      <div class="sc_services_item_description">
+                                                          <p>Unir esfuerzos entre los miembros, así como con organizaciones y empresas locales con la finalidad de tomar acciones coordinadas en beneficio de nuestra sociedad.</p>
+                                                      </div>
+                                                  </div>
+                                              </div><!-- /Services item --><!-- Services item --><div class="sc_services_item sc_services_item_3 odd">
+                                                  <span class="sc_icon icon-avatar110"></span>
+                                                  <div class="sc_services_item_content">
+                                                      <h4 class="sc_services_item_title">
+                                                          <a href="service-single.html">Valores</a>
+                                                      </h4>
+                                                      <div class="sc_services_item_description">
+                                                          <p>Nos regimos por los valores de compromiso, integridad, diversidad, equidad, justicia, colaboración, impacto y sobre todo respeto.</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <!-- /Services item -->
+                                          </div>
+                                      </div>
+                                          </div>
+                                      <!-- /Services section -->
 
-  </body>
- </html>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- /Welcome section -->
+                              <!-- Mission section -->
+                              <div class="hp1_mission_section">
+                                  <div class="content_wrap">
+                                      <div class="columns_wrap sc_columns columns_fluid no_margins sc_columns_count_2">
+                                          <div class="column-1_2 sc_column_item sc_column_item_1 odd first">
+                                              <h2 class="sc_title sc_title_regular sc_align_right">La participación de líderes jóvenes para dar forma a la agenda global es clave para fortalecer las comunidades, la economía y alentar la innovación.</h2>
+                                          </div><div class="column-1_2 sc_column_item sc_column_item_2 even">
+                                              <div class="sc_section">
+                                                  <div class="sc_section_inner">
+                                                      <h5 class="tpl_light">
+                                                        “Tuve el privilegio de discutir con líderes y activistas comunitarios progresistas, enérgicos y comprometidos de todo el mundo sobre cómo influyen en la narrativa sobre la diversidad internacional. Al mantener un diálogo significativo, estamos mostrando al mundo que estos jóvenes entienden, como lo hace Canadá, que el pluralismo es la clave para construir naciones resilientes y seguras en todo el mundo.”
+                                                      </h5>
+                                                      <h6 class="tpl_light">Justin Trudeu, Primer Ministro de Canadá sobre Global Shapers</h6>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- /Mission section -->
+                              <!-- Services section -->
+                              <div class="hp3_info_section" id="iniciativas">
+                                  <div class="content_wrap">
+                                      <div class="sc_services_wrap">
+                                          <div class="sc_services sc_services_style_services-2 sc_services_type_icons sc_slider_nopagination sc_slider_nocontrols aligncenter width_100_per" data-interval="7580" data-slides-per-view="3" data-slides-min-width="250">
+                                              <h6 class="sc_services_subtitle sc_item_subtitle">Iniciativas</h6>
+                                              <h2 class="sc_services_title sc_item_title">¿Qué hacemos?</h2>
+                                              <div class="sc_services_descr sc_item_descr">Nos preocupa tener un impacto real en la ciudad de Cancún. Nuestros proyectos van desde el intercambio del conocimiento a través de espacios de diálogo públicos y privados, y actividades que involucran el beneficio de personas en comunidades. Buscamos principalmente el impacto sobre tres líneas de trabajo:</div>
+                                              <div class="sc_columns columns_wrap">
+                                                  <div class="column-1_3 column_padding_bottom">
+                                                      <div class="sc_services_item sc_services_item_1 odd first">
+                                                          <div class="sc_services_item_header">
+                                                              <span class="sc_icon icon-christian8"></span>
+                                                              <h4 class="sc_services_item_title" style="font-size: 1.2em">Acción por el cambio climático, y el emprendimiento sustentable</h4>
+                                                          </div>
+                                                          <div class="sc_services_item_content">
+                                                              <div class="sc_services_item_description">
+                                                                 <h5 class="sc_title sc_title_regular margin_top_null">Los Shapers somos apasionados por el medio ambiente y por la urgente necesidad por preservar la naturaleza</h5>
+                                                                <p>Buscamos movilizar a personas que tomen acción por el cambio climático, plantar y reforestar, e influir en la opinión pública para inspirar a tomar medidas y acciones a favor de un futuro más sustentable.</p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div><div class="column-1_3 column_padding_bottom">
+                                                      <div class="sc_services_item sc_services_item_2 even">
+                                                          <div class="sc_services_item_header">
+                                                              <span class="sc_icon icon-open-book6"></span>
+                                                              <h4 class="sc_services_item_title" style="font-size: 1.2em">Emprendimiento y educación en tendencias tecnológicas y habilidades blandas</h4>
+                                                          </div>
+                                                          <div class="sc_services_item_content">
+                                                              <div class="sc_services_item_description">
+                                                                  <h5 class="sc_title sc_title_regular margin_top_null">Por una juventud más conectada, más diversa y más innovadora como nunca antes se había visto</h5>
+                                                                  <p>Proponemos la formación de habilidades STEM y de inclusión digital entre la sociedad, principalmente entre los más jóvenes así como generar ecosistemas de emprendimiento sostenible con visión hacia el futuro.</p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div><div class="column-1_3 column_padding_bottom">
+                                                      <div class="sc_services_item sc_services_item_3 odd">
+                                                          <div class="sc_services_item_header">
+                                                              <span class="sc_icon icon-profile"></span>
+                                                              <h4 class="sc_services_item_title" style="font-size: 1.2em">Participación cívica y educación en construcción para la paz</h4>
+                                                          </div>
+                                                          <div class="sc_services_item_content">
+                                                              <div class="sc_services_item_description">
+                                                                  <h5 class="sc_title sc_title_regular margin_top_null">Equidad e inclusión como los principios fundamentales de nuestra comunidad</h5>
+                                                                  <p>Queremos una sociedad más libre, más justa y en donde se promueva la paz y la prosperidad de sus individuos ante cualquier cosa. Una sociedad diversa requiere que existan las mismas oportunidades para todos.</p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- /Services section -->
+
+                                <!-- Essential Grid Section -->
+                                <div class="sc_section">
+                                    <div class="sc_section_inner">
+                                        <!-- THE ESSENTIAL GRID -->
+                                        <!-- GRID WRAPPER FOR CONTAINER SIZING - HERE YOU CAN SET THE CONTAINER SIZE AND CONTAINER SKIN -->
+                                        <article class="myportfolio-container minimal-light" id="esg-grid-1-1-wrap">
+                                            <!-- THE GRID ITSELF WITH FILTERS, PAGINATION, SORTING ETC... -->
+                                            <div id="esg-grid-1-1" class="esg-grid">
+                                                <!-- ############################ -->
+                                                <!-- THE GRID ITSELF WITH ENTRIES -->
+                                                <!-- ############################ -->
+                                                <ul>
+                                                    <!-- PORTFOLIO ITEM -->
+                                                    <li class="filterall filter-home-2 eg-home-2-block-wrapper">
+                                                        <!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
+                                                        <div class="esg-media-cover-wrapper">
+                                                            <!-- THE MEDIA OF THE ENTRY -->
+                                                            <div class="esg-entry-media">
+                                                                <img src="images/galeria/1.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
+                                                    </li>
+                                                    <!-- END OF PORTFOLIO ITEM -->
+                                                    <!-- PORTFOLIO ITEM -->
+                                                    <li class="filterall filter-home-2 eg-home-2-block-wrapper">
+                                                        <!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
+                                                        <div class="esg-media-cover-wrapper">
+                                                            <!-- THE MEDIA OF THE ENTRY -->
+                                                            <div class="esg-entry-media">
+                                                                <img src="images/galeria/2.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
+                                                    </li>
+                                                    <!-- END OF PORTFOLIO ITEM -->
+                                                    <!-- PORTFOLIO ITEM -->
+                                                    <li class="filterall filter-home-2 eg-home-2-block-wrapper">
+                                                        <!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
+                                                        <div class="esg-media-cover-wrapper">
+                                                            <!-- THE MEDIA OF THE ENTRY -->
+                                                            <div class="esg-entry-media">
+                                                                <img src="images/galeria/3.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
+                                                    </li>
+                                                    <!-- END OF PORTFOLIO ITEM -->
+                                                    <!-- PORTFOLIO ITEM -->
+                                                    <li class="filterall filter-home-2 eg-home-2-block-wrapper">
+                                                        <!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
+                                                        <div class="esg-media-cover-wrapper">
+                                                            <!-- THE MEDIA OF THE ENTRY -->
+                                                            <div class="esg-entry-media">
+                                                                <img src="images/galeria/4.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
+                                                    </li>
+                                                    <!-- END OF PORTFOLIO ITEM -->
+                                                    <!-- PORTFOLIO ITEM -->
+                                                    <li class="filterall filter-home-2 eg-home-2-block-wrapper">
+                                                        <!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
+                                                        <div class="esg-media-cover-wrapper">
+                                                            <!-- THE MEDIA OF THE ENTRY -->
+                                                            <div class="esg-entry-media">
+                                                                <img src="images/galeria/5.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
+                                                    </li>
+                                                    <!-- END OF PORTFOLIO ITEM -->
+                                                    <!-- PORTFOLIO ITEM -->
+                                                    <li class="filterall filter-home-2 eg-home-2-block-wrapper">
+                                                        <!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
+                                                        <div class="esg-media-cover-wrapper">
+                                                            <!-- THE MEDIA OF THE ENTRY -->
+                                                            <div class="esg-entry-media">
+                                                                <img src="images/galeria/6.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
+                                                    </li>
+                                                    <!-- END OF PORTFOLIO ITEM -->
+                                                    <!-- PORTFOLIO ITEM -->
+                                                    <li class="filterall filter-home-2 eg-home-2-block-wrapper">
+                                                        <!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
+                                                        <div class="esg-media-cover-wrapper">
+                                                            <!-- THE MEDIA OF THE ENTRY -->
+                                                            <div class="esg-entry-media">
+                                                                <img src="images/galeria/7.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
+                                                    </li>
+                                                    <!-- END OF PORTFOLIO ITEM -->
+                                                    <!-- PORTFOLIO ITEM 45 -->
+                                                    <li class="filterall filter-home-2 eg-home-2-block-wrapper">
+                                                        <!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
+                                                        <div class="esg-media-cover-wrapper">
+                                                            <!-- THE MEDIA OF THE ENTRY -->
+                                                            <div class="esg-entry-media">
+                                                                <img src="images/galeria/8.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
+                                                    </li>
+                                                    <!-- END OF PORTFOLIO ITEM -->
+                                                </ul>
+                                                <!-- ############################ -->
+                                                <!--      END OF THE GRID         -->
+                                                <!-- ############################ -->
+                                            </div>
+                                            <!-- END OF THE GRID -->
+                                        </article>
+                                        <!-- END OF THE GRID WRAPPER -->
+                                    </div>
+                                </div>
+                                <!-- /Essential Grid Section -->
+                                <!-- Team section -->
+                                <div class="sc_team_wrap scheme_original padding_top_2_5em padding_bottom_7_1429em" id="shapers">
+                                    <div class="content_wrap">
+                                        <div class="sc_team sc_team_style_team-1 sc_slider_nopagination sc_slider_nocontrols aligncenter width_100_per" data-interval="7176" data-slides-per-view="3" data-slides-min-width="250">
+                                            <h6 class="sc_team_subtitle sc_item_subtitle">Global Shapers</h6>
+                                            <h2 class="sc_team_title sc_item_title">Miembros de Cancún</h2>
+                                            <div class="sc_team_descr sc_item_descr">El Hub de Cancún representa un grupo diverso en el que contamos con tecnólogos, abogados, ambientalistas, deportistas, entre otras profesiones e importantes personalidades de la comunidad de emprendimiento y responsabilidad social que representan la riqueza de los diferentes sectores productivos del país y del estado.</div>
+                                            <div class="sc_columns columns_wrap">
+                                              <!-- Team item -->
+                                              <div class="column-1_3 column_padding_bottom">
+                                                  <div class="sc_team_item sc_team_item_1 odd first">
+                                                      <div class="sc_team_item_avatar">
+                                                        <img alt="" src="images/miembros/luis.png">
+                                                      </div>
+                                                      <div class="sc_team_item_info">
+                                                          <h5 class="sc_team_item_title">
+                                                              Luis Martin del Campo
+                                                          </h5>
+                                                          <div class="sc_team_item_position">Founding Curator</div>
+                                                          <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_instagramm">
+                                                                      <span class="icon-instagramm"></span>
+                                                                  </a>
+                                                              </div>
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_facebook">
+                                                                      <span class="icon-facebook"></span>
+                                                                  </a>
+                                                              </div>
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_linkedin">
+                                                                      <span class="icon-linkedin"></span>
+                                                                  </a>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div><!-- /Team item --><!-- Team item --><div class="column-1_3 column_padding_bottom">
+                                                  <div class="sc_team_item sc_team_item_2 even">
+                                                      <div class="sc_team_item_avatar">
+                                                        <img alt="" src="images/miembros/pedro.jpg">
+                                                      </div>
+                                                      <div class="sc_team_item_info">
+                                                          <h5 class="sc_team_item_title">
+                                                              Pedro A. González
+                                                          </h5>
+                                                          <div class="sc_team_item_position">Vice Curator</div>
+                                                          <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_instagramm">
+                                                                      <span class="icon-instagramm"></span>
+                                                                  </a>
+                                                              </div>
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_facebook">
+                                                                      <span class="icon-facebook"></span>
+                                                                  </a>
+                                                              </div>
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_linkedin">
+                                                                      <span class="icon-linkedin"></span>
+                                                                  </a>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div><!-- /Team item --><!-- Team item --><div class="column-1_3 column_padding_bottom">
+                                                  <div class="sc_team_item sc_team_item_3 odd">
+                                                      <div class="sc_team_item_avatar">
+                                                        <img alt="" src="images/miembros/nico.jpg">
+                                                      </div>
+                                                      <div class="sc_team_item_info">
+                                                          <h5 class="sc_team_item_title">
+                                                              Nicolás Cavalieri
+                                                          </h5>
+                                                          <div class="sc_team_item_position">Founding Member</div>
+                                                          <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_instagramm">
+                                                                      <span class="icon-instagramm"></span>
+                                                                  </a>
+                                                              </div>
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_facebook">
+                                                                      <span class="icon-facebook"></span>
+                                                                  </a>
+                                                              </div>
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_linkedin">
+                                                                      <span class="icon-linkedin"></span>
+                                                                  </a>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div><!-- /Team item --><!-- Team item -->
+                                              <div class="column-1_3 column_padding_bottom">
+                                                  <div class="sc_team_item sc_team_item_1 odd first">
+                                                      <div class="sc_team_item_avatar">
+                                                        <img alt="" src="images/miembros/laura.jpg">
+                                                      </div>
+                                                      <div class="sc_team_item_info">
+                                                          <h5 class="sc_team_item_title">
+                                                              Laura López
+                                                          </h5>
+                                                          <div class="sc_team_item_position">Founding Member</div>
+                                                          <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_instagramm">
+                                                                      <span class="icon-instagramm"></span>
+                                                                  </a>
+                                                              </div>
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_facebook">
+                                                                      <span class="icon-facebook"></span>
+                                                                  </a>
+                                                              </div>
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_linkedin">
+                                                                      <span class="icon-linkedin"></span>
+                                                                  </a>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div><!-- /Team item --><!-- Team item --><div class="column-1_3 column_padding_bottom">
+                                                  <div class="sc_team_item sc_team_item_2 even">
+                                                      <div class="sc_team_item_avatar">
+                                                        <img alt="" src="images/miembros/ana.jpg">
+                                                      </div>
+                                                      <div class="sc_team_item_info">
+                                                          <h5 class="sc_team_item_title">
+                                                              Ana Claudia Chacón
+                                                          </h5>
+                                                          <div class="sc_team_item_position">Founding Member</div>
+                                                          <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_instagramm">
+                                                                      <span class="icon-instagramm"></span>
+                                                                  </a>
+                                                              </div>
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_facebook">
+                                                                      <span class="icon-facebook"></span>
+                                                                  </a>
+                                                              </div>
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_linkedin">
+                                                                      <span class="icon-linkedin"></span>
+                                                                  </a>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div><!-- /Team item --><!-- Team item --><div class="column-1_3 column_padding_bottom">
+                                                  <div class="sc_team_item sc_team_item_3 odd">
+                                                      <div class="sc_team_item_avatar">
+                                                        <img alt="" src="images/miembros/camila.jpg">
+                                                      </div>
+                                                      <div class="sc_team_item_info">
+                                                          <h5 class="sc_team_item_title">
+                                                              Camila Sansores
+                                                          </h5>
+                                                          <div class="sc_team_item_position">Founding Member</div>
+                                                          <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_instagramm">
+                                                                      <span class="icon-instagramm"></span>
+                                                                  </a>
+                                                              </div>
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_facebook">
+                                                                      <span class="icon-facebook"></span>
+                                                                  </a>
+                                                              </div>
+                                                              <div class="sc_socials_item">
+                                                                  <a href="#" target="_blank" class="social_icons social_linkedin">
+                                                                      <span class="icon-linkedin"></span>
+                                                                  </a>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div><!-- /Team item -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Team section -->
+                                <!-- Gathering time section -->
+                                <div class="hp3_gathering_section">
+                                    <div class="content_wrap">
+                                        <div class="columns_wrap sc_columns columns_nofluid sc_columns_count_4 column_resizer-3">
+                                            <div class="column-1_4 sc_column_item sc_column_item_1 odd first">
+                                                <div class="sc_section">
+                                                    <div class="sc_section_inner">
+                                                        <span class="sc_icon icon-alarm-clock alignright"></span>
+                                                    </div>
+                                                </div>
+                                            </div><div class="column-2_4 sc_column_item sc_column_item_2 even span_2">
+                                                <h2 class="sc_title sc_title_regular sc_align_center text_align_center tpl_light">¡Únete a nuestro Zoom!</h2>
+                                                <h4 class="sc_title sc_title_regular sc_align_center">Nos reunimos todos los miércoles a las 9:30 PM</h4>
+                                            </div><div class="column-1_4 sc_column_item sc_column_item_4 even after_span_2">
+                                                <a href="#" class="sc_button sc_button_square sc_button_style_border sc_button_color_style_4 sc_button_size_large">DIRECTION</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Gathering time section -->
+                            </section>
+                        </article>
+                    </div>
+                </div>
+                <!-- /Page Content Wrap -->
+                <!-- Donation section -->
+                <div class="hp1_donation_section">
+                    <div class="content_wrap">
+                        <div class="sc_section column-7_10">
+                            <div class="sc_section_inner">
+                                <div class="sc_section aligncenter">
+                                    <div class="sc_section_inner">
+                                        <h1 class="donation_title_custom">
+                                            Jóvenes excepcionales<br />
+                                            contribuyendo al desarrollo <br>
+                                            de sus comunidades</h1>
+                                        <h2 class="sc_title sc_title_cursive sc_align_center" style="color: white">Global Shapers Cancún</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Donation section -->
+                <!-- Join Us section -->
+                <div class="hp1_join_us_section accent1_bgc padding_top_2_75em padding_bottom_3em" id="contacto">
+                    <div class="content_wrap">
+                        <div class="columns_wrap sc_columns columns_nofluid sc_columns_count_4 column_resizer">
+                            <div class="column-4_4 sc_column_item sc_column_item_1 odd first span_2">
+                              <h2 class="hp1_join_us_info custom_heading_1">Si estás interesado en contactarnos favor de enviar un correo con tus datos y tu tema de interés directamente a >></h2>
+                              <style>.hp1_join_us_info.custom_heading_1 a:hover {color:white !important}</style>
+                              <h2 class="hp1_join_us_info custom_heading_1">| <a href="#">hola@globalshaperscancun.org</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Join Us section -->
+                <!-- Copyright -->
+                <div class="copyright_wrap copyright_style_text scheme_original">
+                    <div class="copyright_wrap_inner">
+                        <div class="content_wrap">
+                            <div class="copyright_text">Global Shapers Cancún © <script>document.write(new Date().getFullYear())</script></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Copyright -->
+            </div>
+            <!-- /Page wrap -->
+        </div>
+        <!-- /Body wrap -->
+
+        <a href="#" class="scroll_to_top icon-up" title="Scroll to top"></a>
+
+        <script type="text/javascript" src="js/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery/jquery-migrate.min.js"></script>
+
+        <script type="text/javascript" src="js/vendor/photostack/modernizr.min.js"></script>
+        <script type="text/javascript" src="js/_main.min.js"></script>
+        <script type="text/javascript" src="js/_packed.js"></script>
+
+        <script type="text/javascript" src="js/vendor/essential-grid/js/lightbox.js"></script>
+        <script type="text/javascript" src="js/vendor/essential-grid/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="js/vendor/essential-grid/js/jquery.themepunch.essential.min.js"></script>
+        <script type="text/javascript" src="js/essential-grid-homepage-2.min.js"></script>
+
+        <script type="text/javascript" src="js/vendor/revslider/jquery.themepunch.revolution.min.js"></script>
+
+        <script type="text/javascript" src="js/vendor/revslider/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="js/vendor/revslider/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="js/vendor/revslider/revolution.extension.kenburn.min.js"></script>
+        <script type="text/javascript" src="js/vendor/revslider/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="js/vendor/revslider/revolution.extension.parallax.min.js"></script>
+        <script type="text/javascript" src="js/revslider-homepage-2.min.js"></script>
+
+        <script type="text/javascript" src="js/superfish.min.js"></script>
+        <script type="text/javascript" src="js/core.utils.min.js"></script>
+        <script type="text/javascript" src="js/core.init.min.js"></script>
+        <script type="text/javascript" src="js/template.init.min.js"></script>
+
+        <script type="text/javascript" src="js/shortcodes.min.js"></script>
+        <script type="text/javascript" src="js/core.messages.min.js"></script>
+        <script type="text/javascript" src="js/vendor/magnific/jquery.magnific-popup.min.js"></script>
+
+        <script type="text/javascript" src="js/countdown/jquery.plugin.min.js"></script>
+        <script type="text/javascript" src="js/countdown/jquery.countdown.min.js"></script>
+        <script type="text/javascript" src="js/vendor/swiper/swiper.min.js"></script>
+        <script type="text/javascript" src="js/vendor/isotope/dist/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/jquery/ui/accordion.min.js"></script>
+
+    </body>
+
+</html>
